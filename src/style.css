@@ -1,0 +1,188 @@
+.Layout{
+    color: purple;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.title{
+    margin-top: 1px;
+}
+.nameDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#fName{
+    border: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: plum;
+    padding: 10px;
+    width: 200px;
+    outline-color: purple;
+}
+#lName{
+    border: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: plum;
+    padding: 10px;
+    width: 200px;
+    outline-color: purple;
+}
+.middleLayout{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    background-color:white;
+    border-radius: 30px;
+    text-align: center;
+    width: 600px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loginImg{
+    display: flex;
+    height: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.signUpDetails{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 10px;
+}
+.Details{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.nameDetails{
+    display: flex;
+    font-size: 15px;
+
+}
+#ID{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: plum;
+    padding: 15px;
+    width: 200px;
+    outline-color: purple;
+}
+#Pwd{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: plum;
+    padding: 15px;
+    width: 200px;
+    outline-color: purple;
+}
+#confirmPwd{
+    border: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: plum;
+    padding: 10px;
+    width: 200px;
+    outline-color: purple;
+}
+.otherOptions{
+    display: flex;
+    flex-direction: column;
+}
+.alreadyAccount{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    margin-left: 110px;
+}
+.login{
+    font-size: 10px;
+    cursor: pointer;
+    padding: 5px;
+    color: purple;
+    text-decoration: none;
+}
+.tc{
+    font-size: 10px;
+}
+.actionButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.signUp{
+    background-color: plum;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+.socialSignUp{
+    background-color: plum;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+.Login:hover,.socialSignUp:hover,.signUp:hover,.alreadyAccount:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 769px) {
+    .Layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        background-size: cover;
+        background-image: url('bg.jpg');
+        width: 170vh;
+    }
+    .middleLayout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        width: 80%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom:100%;
+    }
+    .loginImg{
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+    .signUpDetails{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        gap: 10px;
+    }
+    .confirmPassword{
+        margin-right: 65px;
+        padding: 15px;
+    }
+    .lastName{
+        margin-right: 25px;
+    }
+    .firstName{
+        margin-right: 25px;
+    }
+    
+}
